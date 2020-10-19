@@ -1,0 +1,34 @@
+version: '3.7'
+services:
+  postgres:
+    image: postgres:12
+    env_file:
+      - .env
+    volumes:
+      - ./docker/postgres/data:/var/lib/postgresql/data
+      - "/tmp:/tmp"
+    networks:
+      - local
+    ports:
+      - 5433:5432
+  sphinxsearch:
+    build:
+      context: docker/sphinxsearch
+      dockerfile: Dockerfile
+      args:
+        sphinx_config_folder: ${SPHINX_CONFIG_FOLDER}
+        postgres_host: ${POSTGRES_HOST}
+        postgres_user: ${POSTGRES_USER}
+        postgres_password: ${POSTGRES_PASSWORD}
+        postgres_db: ${POSTGRES_DB}
+    volumes:
+      - ./docker/sphinxsearch/data:/var/lib/sphinx
+      - ./docker/sphinxsearch/log:/var/log/sphinx
+    depends_on:
+      - postgres
+    networks:
+      - local
+    ports:
+      - 9312:9312
+networks:
+  local:

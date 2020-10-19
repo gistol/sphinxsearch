@@ -1,0 +1,22 @@
+[Sat Oct 17 07:33:39.572 2020] [7] listening on all interfaces, port=9312
+[Sat Oct 17 07:33:39.600 2020] [7] WARNING: index 'post': prealloc: failed to open /var/lib/sphinx/post.sph: No such file or directory; NOT SERVING
+[Sat Oct 17 07:33:39.604 2020] [7] FATAL: no valid indexes to serve
+[Sat Oct 17 07:33:39.610 2020] [7] shutdown complete
+[Sat Oct 17 07:37:48.494 2020] [8] listening on all interfaces, port=9312
+[Sat Oct 17 07:37:48.520 2020] [8] WARNING: index 'post': prealloc: failed to open /var/lib/sphinx/post.sph: No such file or directory; NOT SERVING
+[Sat Oct 17 07:37:48.523 2020] [8] FATAL: no valid indexes to serve
+[Sat Oct 17 07:37:48.529 2020] [8] shutdown complete
+[Sat Oct 17 07:42:51.196 2020] [7] listening on all interfaces, port=9312
+[Sat Oct 17 07:42:51.351 2020] [7] rotating index 'post': success
+[Sat Oct 17 07:42:51.366 2020] [7] accepting connections
+[Sat Oct 17 07:42:51.367 2020] [15] prereading 1 indexes
+[Sat Oct 17 07:42:51.381 2020] [15] prereaded 1 indexes in 0.014 sec
+[Sat Oct 17 07:46:07.011 2020] [7] listening on all interfaces, port=9312
+[Sat Oct 17 07:46:07.231 2020] [7] rotating index 'post': success
+[Sat Oct 17 07:46:07.246 2020] [7] binlog: replaying log /usr/local/var/data/binlog.001
+[Sat Oct 17 07:46:07.249 2020] [7] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sat Oct 17 07:46:07.252 2020] [7] binlog: finished replaying /usr/local/var/data/binlog.001; 0.0 MB in 0.000 sec
+[Sat Oct 17 07:46:07.255 2020] [7] binlog: finished replaying total 1 in 0.008 sec
+[Sat Oct 17 07:46:07.260 2020] [7] accepting connections
+[Sat Oct 17 07:46:07.260 2020] [15] prereading 1 indexes
+[Sat Oct 17 07:46:07.270 2020] [15] prereaded 1 indexes in 0.010 sec
